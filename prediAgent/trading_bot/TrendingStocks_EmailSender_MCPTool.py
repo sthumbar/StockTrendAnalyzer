@@ -83,8 +83,8 @@ async def run_mcp_email_tool(user_input: str):
     """Sends an email with stock information. Use when the user asks to 'send an email' or provides an email address."""
     print(f"[mcp_tool] Received query: {user_input}")
     
-    server_script = "MCP_Trending_Tckr_Server.py"
-    server_cwd = "/Users/sangeeta/Documents/kaggleHakathonNov15/prediAgent/stock_Prediction_Mailer"
+    server_script = "MCP_Trending_Tckr_EmailServer.py"
+    server_cwd = "/Users/sangeeta/KaggleGoogleCapstoneProject/StockTrendAnalyzer/prediAgent/stock_Prediction_Mailer"
     server_path = os.path.join(server_cwd, server_script)
 
     print(f"[mcp_tool] DEBUG: Checking for server script at: {server_path}")
